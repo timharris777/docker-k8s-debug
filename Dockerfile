@@ -1,2 +1,5 @@
 FROM ubuntu:latest
-RUN apt install -y wget curl jq
+RUN apt-get update && apt install -y \
+  wget \ 
+  curl \
+  jq
